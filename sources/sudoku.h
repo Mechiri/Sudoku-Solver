@@ -63,10 +63,10 @@ class sudoku
 		sudoku(); //constructor
 		~sudoku();//destructor
 		
-		int total_empty_spaces;    //total number of empty spaces
-		void solve();              // to solve sudoku
-		void display() const;      // to display sudoku....
-		void display_thenumber();  //to display the number of sudoku results generated
+		int total_empty_spaces;    	//total number of empty spaces
+		void solve();              	// to solve sudoku
+		void display() const;      	// to display sudoku....
+		void display_thenumber() const; //to display the number of sudoku results generated
 };
 
 #endif

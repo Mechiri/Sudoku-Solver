@@ -320,7 +320,7 @@ void sudoku::display() const
 	}
 	cout<<endl<<endl;		
 }
-void sudoku::display_thenumber()
+void sudoku::display_thenumber() const
 {
 	cout<<"The number of sudoku results generated are: "<<number_of_sudoku_results-1<<endl<<endl<<endl;
 	cout<<"                                                  BYE TAKE CARE :)                                                   "<<endl;
