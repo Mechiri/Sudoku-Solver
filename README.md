@@ -7,16 +7,11 @@ Project Description
 Project Output
 How to execute and check the output
 My Details
-
-                                                         Project Description
-                                                         -------------------
-
+Project Description
+-------------------
 I think everybody knows Sudoku. This is small and simple project which takes incomplete sudoku matrix and gives one or more complete sudoku matrix. In addition it provides number of complete sudoku generated and time taken to solve the sudoku. This sudoku solver solves the sudoku almost like human i.e.,first it identifies and fills empty spaces which have only one possible values and it repeats untill it doesn't contain empty spaces which have only one possible values. Then it fills empty spaces which have more than one possible values increasingly. Below shows sample project output.
-
-
-                                                          Project Output
-                                                          --------------
-
+Project Output
+--------------
 The output is written in the file output.txt, which is located in "sudoku input & output" folder.
 The path is:  ./sudoku\ input\ \&\ output/output.txt"
 
@@ -134,24 +129,19 @@ The time taken to solve the sudoko is: 0.170094sec (0.000170094 ms)
 
 The number of sudoku results generated are: 8
 
-                                                  BYE TAKE CARE :)                                                   
-
-                                                
-
-						How to Execute and Check the Output
-                                                -----------------------------------
+                                                  BYE TAKE CARE :)                       						
+How to Execute and Check the Output
+-----------------------------------
 Requirements
 ------------
  -Linux Operating System
  -vim or gedit tools
  -g++ Compiler
  -make build tool
-
 Execution
 ---------
- Before Running make. Open the file input.txt loacted in folder "sudoku input & output". And write sudoku incomplete matrix in input.txt file as sample shown in Project Output. Then run make command. Now, you will see complete sudoku matrix in output.txt located in folder "sudoku input & output".
 
- 
+ Before Running make. Open the file input.txt loacted in folder "sudoku input & output". And write sudoku incomplete matrix in input.txt file as sample shown in Project Output. Then run make command. Now, you will see complete sudoku matrix in output.txt located in folder "sudoku input & output".
 My Details
 ----------
 If you have any Questions. Please email to me.
