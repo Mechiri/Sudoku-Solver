@@ -132,13 +132,13 @@ The number of sudoku results generated are: 8
 
 ##How to Execute and Check the Output
 
-#1.Requirements
+###1.Requirements
   -Linux Operating System  
   -vim or gedit tools  
   -g++ Compiler  
   -make build tool    
 
-#2.Execution
+###2.Execution
  Before Running make. Open the file input.txt loacted in folder "sudoku input & output". And write sudoku incomplete matrix in input.txt file as sample shown in Project Output. Then run make command. Now, you will see complete sudoku matrix in output.txt located in folder "sudoku input & output".    
 
 ##My Details
