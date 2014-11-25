@@ -1,6 +1,0 @@
-vpath %.h ../headers
-
-objects = sudoku_error.o
-
-sudoku_error.o: $(objects) sudoku_error.h
-	g++ -c -std=c++11 $< -o $@

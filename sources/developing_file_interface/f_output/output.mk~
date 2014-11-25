@@ -1,6 +1,0 @@
-vpath %.h ../headers
-
-objects = outputfile.o
-
-outputfile.o: $(objects) outputfile.h
-	g++ -c -std=c++11 $< -o $@
