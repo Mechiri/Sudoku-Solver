@@ -4,11 +4,8 @@ Sudoku-Solver
 CONTENTS
 --------
 Project Description
-
 Project Output
-
 How to execute and check the output
-
 My Details
 
 
