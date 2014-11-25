@@ -1,4 +1,0 @@
-objects = sudoku_error.o
-
-error.o: $(objects) sudoku_error.h
-	g++ -c -std=c++11 $< -o $@
