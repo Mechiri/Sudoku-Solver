@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
 
 	outputfile output;
 	output.write_sudoku_input(matrix);
-	output.write_sudoku_result(matrix);
+	write_sudoku_result(matrix);
 	display(matrix);
 	cout<<endl;
 }
