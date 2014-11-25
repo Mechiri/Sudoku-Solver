@@ -8,9 +8,9 @@ Sudoku-Solver
 * My Details   
 
 ##Project Description
-```
+
 I think everybody knows Sudoku. This is small and simple project which takes incomplete sudoku matrix and gives one or more complete sudoku matrix. In addition it provides number of complete sudoku generated and time taken to solve the sudoku. This sudoku solver solves the sudoku almost like human i.e.,first it identifies and fills empty spaces which have only one possible values and it repeats untill it doesn't contain empty spaces which have only one possible values. Then it fills empty spaces which have more than one possible values increasingly. Below shows sample project output.  
-```
+
 
 ##Project Output
 
@@ -19,7 +19,8 @@ I think everybody knows Sudoku. This is small and simple project which takes inc
 - The path is:  ./sudoku\ input\ \&\ output/output.txt"   
 ```
 
-```THE ENTERED SUDOKU IS:    
+```
+THE ENTERED SUDOKU IS:    
 
 The sudoku input:  
 	 0 8 0 0 0 9 7 4 3  
@@ -150,4 +151,3 @@ If you have any Questions. Please email to me.
 
 *Name:* _Mechiri Vinod Kumar_  
 *Email:* _mvk046@gmail.com_  
-
