@@ -18,6 +18,7 @@ I think everybody knows Sudoku. This is small and simple project which takes inc
 - The output is written in the file output.txt, which is located in "sudoku input & output" folder.   
 - The path is:  ./sudoku\ input\ \&\ output/output.txt"   
 ```
+* The input and output [link](https://github.com/Mechiri/Sudoku-Solver/tree/master/sources/sudoku%20input%20%26%20output)
 
 ```
 THE ENTERED SUDOKU IS:    
