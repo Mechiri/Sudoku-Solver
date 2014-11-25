@@ -127,8 +127,7 @@ The complete sudoku output:
 The time taken to solve the sudoko is: 0.170094sec (0.000170094 ms)  
 
 The number of sudoku results generated are: 8  
-
-                                                  BYE TAKE CARE :)                       						
+                   						
 
 ##How to Execute and Check the Output
 
