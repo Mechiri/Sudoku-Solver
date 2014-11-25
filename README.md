@@ -3,20 +3,18 @@ Sudoku-Solver
 
 CONTENTS
 --------
-->Project Description
-->Project Output
-->How to execute and check the output
-->My Details
+Project Description
+Project Output
+How to execute and check the output
+My Details
 
                                                          Project Description
-                                                         -------------------
                                                          -------------------
 
 I think everybody knows Sudoku. This is small and simple project which takes incomplete sudoku matrix and gives one or more complete sudoku matrix. In addition it provides number of complete sudoku generated and time taken to solve the sudoku. This sudoku solver solves the sudoku almost like human i.e.,first it identifies and fills empty spaces which have only one possible values and it repeats untill it doesn't contain empty spaces which have only one possible values. Then it fills empty spaces which have more than one possible values increasingly. Below shows sample project output.
 
 
                                                           Project Output
-                                                          --------------
                                                           --------------
 
 The output is written in the file output.txt, which is located in "sudoku input & output" folder.
@@ -141,7 +139,6 @@ The number of sudoku results generated are: 8
                                                 
 
 						How to Execute and Check the Output
-						-----------------------------------
                                                 -----------------------------------
 Requirements
 ------------
@@ -156,7 +153,6 @@ Execution
 
  
 My Details
-----------
 ----------
 If you have any Questions. Please email to me.
 Name: Mechiri Vinod Kumar
