@@ -10,6 +10,8 @@
 #include"sudoku.h"
 #include<iostream>
 #include<time.h>
+#include<exception>
+#include"sudoku_error.h"
 
 using namespace std;
 
@@ -17,7 +19,8 @@ int main()
 {
 	sudoku sudoku1;
 	clock_t time;
-
+	
+	set_terminate(sudoku_terminate);
 	cout<<"THE ENTERED SUDOKU IS:\n";
 	sudoku1.display();	
 	
