@@ -8,13 +8,17 @@ Sudoku-Solver
 * My Details   
 
 ##Project Description
-```I think everybody knows Sudoku. This is small and simple project which takes incomplete sudoku matrix and gives one or more complete sudoku matrix. In addition it provides number of complete sudoku generated and time taken to solve the sudoku. This sudoku solver solves the sudoku almost like human i.e.,first it identifies and fills empty spaces which have only one possible values and it repeats untill it doesn't contain empty spaces which have only one possible values. Then it fills empty spaces which have more than one possible values increasingly. Below shows sample project output.  
 ```
+I think everybody knows Sudoku. This is small and simple project which takes incomplete sudoku matrix and gives one or more complete sudoku matrix. In addition it provides number of complete sudoku generated and time taken to solve the sudoku. This sudoku solver solves the sudoku almost like human i.e.,first it identifies and fills empty spaces which have only one possible values and it repeats untill it doesn't contain empty spaces which have only one possible values. Then it fills empty spaces which have more than one possible values increasingly. Below shows sample project output.  
+```
+
 ##Project Output
+
 ```
 - The output is written in the file output.txt, which is located in "sudoku input & output" folder.   
 - The path is:  ./sudoku\ input\ \&\ output/output.txt"   
 ```
+
 ```THE ENTERED SUDOKU IS:    
 
 The sudoku input:  
@@ -132,18 +136,18 @@ The number of sudoku results generated are: 8
 
 ##How to Execute and Check the Output
 
-###1.Requirements
+###Requirements
 ..* Linux Operating System  
 ..* vim or gedit tools  
 ..* g++ Compiler  
 ..* make build tool    
 
-###2.Execution
+###Execution
  Before Running make. Open the file input.txt loacted in folder "sudoku input & output". And write sudoku incomplete matrix in input.txt file as sample shown in Project Output. Then run make command. Now, you will see complete sudoku matrix in output.txt located in folder "sudoku input & output".    
 
 ##My Details
-If you have any Questions. Please email to me.  
-```
+If you have any Questions. Please email to me.   
+
 *Name:* _Mechiri Vinod Kumar_  
 *Email:* _mvk046@gmail.com_  
-```
+
