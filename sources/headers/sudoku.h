@@ -10,12 +10,16 @@
 #if !defined _SUDOKU_H
 #define _SUDOKU_H
 
+#include"inputfile.h"
+#include"outputfile.h"
+
 class sudoku
 {
 	private:
 		int sudoku_matrix[9][9];
-		
-	
+		inputfile input;
+		outputfile output;		
+
 		class empty_space
 		{
 			public:
@@ -31,7 +35,7 @@ class sudoku
 		
 		int number_of_sudoku_results; //the number states how many sudoku results generated 
 		
-		void create();  //to create sudoko matrix
+		void create() throw();  //to create sudoko matrix
 		int check();    // to check sudoku(rows, columns, 9 blocks)....
 		
 
@@ -66,7 +70,7 @@ class sudoku
 		int total_empty_spaces;    	//total number of empty spaces
 		void solve();              	// to solve sudoku
 		void display() const;      	// to display sudoku....
-		void display_thenumber() const; //to display the number of sudoku results generated
-};
+		void display_sudoku_details(float total_time) const; //to display the number of sudoku results generated and time taken
+} ;
 
 #endif

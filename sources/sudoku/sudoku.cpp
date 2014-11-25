@@ -10,6 +10,7 @@
 #include"sudoku.h"
 #include<iostream>
 
+
 using namespace std;
 
 int sudoku::empty_space::current_index = 0;
@@ -166,39 +167,25 @@ void sudoku::block_details(int row, int col, int* values)
 }
 
 
-sudoku::sudoku() : sudoku_matrix{{0}}, total_empty_spaces(0), number_of_sudoku_results(0)
+sudoku::sudoku() : sudoku_matrix{{0}}, total_empty_spaces(0), number_of_sudoku_results(0), es(NULL)
 { 
 	create();
 	
 	if(total_empty_spaces)
 		es = new empty_space[total_empty_spaces];
+	
+	output.write_sudoku_input(sudoku_matrix);
 }
 
 sudoku::~sudoku()
 {
-	delete[] es;
+	if( es )
+		delete[] es;
 }
 
-int get_number()
+void sudoku::create() throw()
 {
-	int num;
 	
-	do
-	{
-		cin>>num;
-		if( num>-1 && num<10 )
-			return num;
-		else
-		{
-			num = 99;
-			cout<<"error: the number should be between 1 and 9 inclusive..."<<endl;
-		}
-	}while( num );
-}
-
-void sudoku::create()
-{
-	cout<<"\n\n\n\nPlease enter the numbers between 1 and 9 inclusive in (9x9) sudoku. Enter the numbers row by row.\n And for empty spaces please enter \"0\".\n\nENTER THE NUMBERS IN SUDOKO(9X9):\n";
 	for(int row = 0; row < 9; row++)
 		for(int col = 0; col < 9; col++)
 		{
@@ -206,9 +193,12 @@ void sudoku::create()
 			do
 			{
 				if( flag )
-					cout<<"error: the number is repititive may be in row or col or block..."<<endl;
+				{
+					cerr<<"error: the number is repititive may be in row or col or block..."<<endl;
+					throw;
+				}
 				flag = 1;
-				if( !(sudoku_matrix[row][col] = ::get_number()) )
+				if( !(sudoku_matrix[row][col] = input.get_integer()) )
 					++total_empty_spaces;
 				
 			}while( !check() );
@@ -307,21 +297,9 @@ int sudoku::check_column(int row, int col)
 void sudoku::display() const
 {
 	++const_cast<sudoku*>(this)->number_of_sudoku_results;
-	cout<<"The content of sudoku:\n\n";
-	
-	for(int row = 0; row < 9; row++)
-	{
-		cout<<"\t";
-		for(int col = 0; col < 9; col++)
-		{
-			printf("%-2d ",sudoku_matrix[row][col]);
-		}
-		cout<<endl;
-	}
-	cout<<endl<<endl;		
+	output.write_sudoku_result(sudoku_matrix);	
 }
-void sudoku::display_thenumber() const
+void sudoku::display_sudoku_details(float total_time) const
 {
-	cout<<"The number of sudoku results generated are: "<<number_of_sudoku_results-1<<endl<<endl<<endl;
-	cout<<"                                                  BYE TAKE CARE :)                                                   "<<endl;
+	output.write_sudoku_details(number_of_sudoku_results,total_time);
 }

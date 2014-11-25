@@ -13,30 +13,28 @@
 #include<exception>
 #include"sudoku_error.h"
 
+
 using namespace std;
 
 int main()
 {
+	set_terminate(sudoku_terminate); // setting global error function
+	
 	sudoku sudoku1;
 	clock_t time;
-	
-	set_terminate(sudoku_terminate);
-	cout<<"THE ENTERED SUDOKU IS:\n";
-	sudoku1.display();	
+	float total_time_taken;
 	
 	if(sudoku1.total_empty_spaces)
 	{
 		time=clock();
 		sudoku1.solve();
 		time=clock()-time;
-		cout<<"The time taken to solve the sudoko is: "<< ((float)time)/CLOCKS_PER_SEC << "sec ("<<((float)time)/CLOCKS_PER_SEC/1000<<" ms)"<<endl;
+		total_time_taken = ((float)time)/CLOCKS_PER_SEC;
 	}
 	else
-	{
-		cout<<"Great thanks to you because you entered solved sudoku\n";
 		sudoku1.display();
-	}
 	
-	sudoku1.display_thenumber();
-	cout<<endl;
+	sudoku1.display_sudoku_details(total_time_taken);
+	cout<<"YOUR SUDOKU PROBLEM SOLVED\nYOU CAN SEE INPUT AND OUTPUT IN \"./sudoku input & output\""<<endl;
+	return 1;
 }
